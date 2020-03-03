@@ -1,0 +1,13 @@
+version: "3"
+services:
+  postgres:
+    image: edtasixm06/postgres:detach
+    container_name: postgres.edt.org
+    hostname: postgres.edt.org
+    ports: 
+      - "542:5432"
+    networks:
+      - mynet
+networks:
+  mynet:
+
