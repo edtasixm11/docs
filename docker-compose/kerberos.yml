@@ -1,0 +1,14 @@
+version: "3"
+services:
+  kserver:
+    image: edtasixm11/k19:kserver
+    container_name: kserver.edt.org
+    hostname: kserver.edt.org
+    ports:
+      - "88:88"
+      - "464:464"
+      - "749:749"
+    networks:
+      - mynet
+networks:
+  mynet:

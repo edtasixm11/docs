@@ -1,0 +1,13 @@
+version: "3"
+services:
+  hello:
+    image: edtasixm11/k19:hello
+    deploy:
+      replicas: 3            
+    ports:
+      - "80:80"            
+    networks:
+      - mynet
+networks:
+  mynet:
+
