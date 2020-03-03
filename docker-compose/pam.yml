@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ldap:
+    image: edtasixm06/hostpam19:auth
+    container_name: pam.edt.org
+    hostname: pam.edt.org
+    networks:
+      - mynet
+networks:
+  mynet:
+

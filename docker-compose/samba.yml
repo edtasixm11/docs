@@ -1,0 +1,14 @@
+version: "3"
+services:
+  ldap:
+    image: edtasixm06/samba19:pam
+    container_name: samba.edt.org
+    hostname: samba.edt.org
+    ports:
+      - "139:139"
+      - "445:445"
+    networks:
+      - mynet
+networks:
+  mynet:
+

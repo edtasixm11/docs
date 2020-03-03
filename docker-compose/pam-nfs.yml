@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ldap:
+    image: edtasixm06/hostpam19:nfs
+    container_name: pamnfs.edt.org
+    hostname: pamnfs.edt.org
+    networks:
+      - mynet
+networks:
+  mynet:
+

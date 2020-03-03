@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ldap:
+          image: edtasixm06/hostpam19:samba
+    container_name: pamsmb.edt.org
+    hostname: pamsmb.edt.org
+    networks:
+      - mynet
+networks:
+  mynet:
+
